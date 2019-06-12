@@ -195,6 +195,7 @@
 		var community = document.createElement('a');
 		var commURL = document.querySelector('meta[name="salesforce-community"]').content;
 		community.href = commURL;
+		alert('commURL'+commURL);
 		community.innerHTML = "Go to the Community";
 		community.setAttribute("style", "float:left");
 		content.appendChild(community);

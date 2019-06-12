@@ -10,19 +10,19 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 	
-    <meta name="salesforce-community" content="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>">
-    <meta name="salesforce-client-id" content="<?php echo getenv('SALESFORCE_CLIENT_ID');?>">
-    <meta name="salesforce-redirect-uri" content="https://<?php echo getenv('SALESFORCE_HEROKUAPP_URL');?>/_callback.php">
-    <meta name="salesforce-mode" content="<?php echo getenv('SALESFORCE_MODE');?>">
-    <meta name="salesforce-namespace" content="<?php echo getenv('SALESFORCE_NAMESPACE');?>">
+    <meta name="salesforce-community" content="https://csso-mylta--csso.cs100.force.com/">
+    <meta name="salesforce-client-id" content="3MVG9uAc45HBYUrhlEzelbv9aCL1qw.nmT3i9kswhX5LNRCK4qiw66B3iXeyikbj9V.KM9z.IQ92Ye_baSrWn">
+    <meta name="salesforce-redirect-uri" content="https://embeddedltalogin.herokuapp.com/_callback.php">
+    <meta name="salesforce-mode" content="modal">
+    <meta name="salesforce-namespace" content="">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
-    <meta name="salesforce-forgot-password-enabled" content="<?php echo getenv('SALESFORCE_FORGOT_PASSWORD_ENABLED');?>">
-    <meta name="salesforce-self-register-enabled" content="<?php echo getenv('SALESFORCE_SELF_REGISTER_ENABLED');?>">
+    <meta name="salesforce-forgot-password-enabled" content="true">
+    <meta name="salesforce-self-register-enabled" content="true">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">
-	<link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-    <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+	<link href="https://csso-mylta--csso.cs100.force.com/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
+    <script src="https://csso-mylta--csso.cs100.force.com/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
   </head>
   
   <body>
@@ -195,7 +195,6 @@
 		var community = document.createElement('a');
 		var commURL = document.querySelector('meta[name="salesforce-community"]').content;
 		community.href = commURL;
-		alert('commURL'+commURL);
 		community.innerHTML = "Go to the Community";
 		community.setAttribute("style", "float:left");
 		content.appendChild(community);

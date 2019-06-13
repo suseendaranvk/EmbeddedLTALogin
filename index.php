@@ -27,7 +27,7 @@
   
   <body>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
-	  <button id="sfid-login-button" class="sfid-button" onclick="window.location.href='https://csso-mylta--csso.cs100.force.com/signin'">Log in</button>
+	  <button id="sfid-login-button" class="sfid-button" onclick="window.location.href='https://susikumar-developer-edition.ap4.force.com/signin'">Log in</button>
     <header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>

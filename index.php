@@ -27,6 +27,7 @@
   
   <body>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
+	  <button id="sfid-login-button" class="sfid-button" onclick="commlogin()">Log in</button>
     <header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
@@ -194,7 +195,7 @@
 
 		var community = document.createElement('a');
 		var commURL = document.querySelector('meta[name="salesforce-community"]').content;
-		community.href = commURL+"signin";
+		community.href = commURL;
 		community.innerHTML = "Go to the Community";
 		community.setAttribute("style", "float:left");
 		content.appendChild(community);
